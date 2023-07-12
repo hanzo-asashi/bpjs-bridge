@@ -2,9 +2,9 @@
 
 namespace Hanzoasashi\BpjsBridge\Tests;
 
+use Hanzoasashi\BpjsBridge\BpjsBridgeServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Hanzoasashi\BpjsBridge\BpjsBridgeServiceProvider;
 
 class TestCase extends Orchestra
 {

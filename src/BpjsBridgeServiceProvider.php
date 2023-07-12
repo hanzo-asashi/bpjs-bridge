@@ -2,9 +2,9 @@
 
 namespace Hanzoasashi\BpjsBridge;
 
+use Hanzoasashi\BpjsBridge\Commands\BpjsBridgeCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Hanzoasashi\BpjsBridge\Commands\BpjsBridgeCommand;
 
 class BpjsBridgeServiceProvider extends PackageServiceProvider
 {
