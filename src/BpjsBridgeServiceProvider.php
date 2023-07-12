@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Hanzoasashi\BpjsBridge;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Hanzoasashi\BpjsBridge\Commands\BpjsBridgeCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class BpjsBridgeServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,11 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('bpjs-bridge')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_bpjs-bridge_table')
+            ->publishesServiceProvider('BpjsBridgeServiceProvider')
+            ->hasCommand(BpjsBridgeCommand::class);
     }
 }

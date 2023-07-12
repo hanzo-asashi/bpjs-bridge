@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Hanzoasashi\BpjsBridge\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class BpjsBridgeCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'bpjs-bridge';
 
     public $description = 'My command';
 
